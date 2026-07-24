@@ -155,7 +155,7 @@ function Hero({ go }) {
             No registration. Just show up.
           </div>
           <h1 className="sg-h1">
-            Where kids learn STEM<br />by <span className="sg-underline">building it.</span>
+            Building tomorrow's problem solvers <br />one step <span className="sg-underline">at a time.</span>
           </h1>
           <p className="sg-lead">
             Free engineering challenges at your local library where elementary students build, test, and create through exciting hands-on STEM experiences. Every event starts with a short lesson followed by a fun engineering challenge that brings science and math to life.
@@ -279,11 +279,9 @@ function Home({ go }) {
         <div className="sg-container sg-mission">
           <Reveal>
             <Eyebrow>OUR MISSION</Eyebrow>
-            <h2 className="sg-h2">We close the gap between the worksheet and the real world.</h2>
+            <h2 className="sg-h2">We close the gap between the classroom and the real world.</h2>
             <p className="sg-body">
-              Too much STEM in school is memorizing for a test. STEMgage flips that. Kids learn a concept,
-              then put it to work in a hands-on engineering challenge they can see, touch, and test. It
-              sticks because they built it themselves.
+              In 2025, we founded STEMgage after noticing that many students were learning STEM by memorizing formulas and facts instead of exploring ideas. We created free, hands-on engineering challenges that let kids build, test, and experiment, helping them discover that science and engineering are meant to be experienced, not just studied.
             </p>
             <div className="sg-hero-ctas">
               <Button onClick={() => go("about")} variant="ghost">Read our story <ArrowRight size={18} /></Button>
