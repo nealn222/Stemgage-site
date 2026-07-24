@@ -104,12 +104,28 @@ function Button({ children, variant = "solid", onClick, full, as = "button", hre
 }
 
 /* A designed photo placeholder shaped like a build-spec sheet */
-function BuildTile({ icon: Icon, label, g1, g2, tall }) {
+function BuildTile({ icon: Icon, image, label, g1, g2, tall }) {
   return (
     <div className="sg-tile" style={{ minHeight: tall ? 280 : 200 }}>
       <div className="sg-tile-art" style={{ background: `linear-gradient(135deg, ${g1}, ${g2})` }}>
-        <div className="sg-grid-overlay" aria-hidden="true" />
-        <Icon size={tall ? 72 : 56} color="#ffffff" strokeWidth={1.6} aria-hidden="true" />
+        {image ? (
+          <img
+            src={image}
+            alt={label}
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              position: 'absolute',
+              inset: 0,
+            }}
+          />
+        ) : (
+          <>
+            <div className="sg-grid-overlay" aria-hidden="true" />
+            <Icon size={tall ? 72 : 56} color="#ffffff" strokeWidth={1.6} aria-hidden="true" />
+          </>
+        )}
       </div>
       <div className="sg-tile-meta">
         <span className="sg-mono-label" style={{ color: C.cobalt }}>PHOTO</span>
