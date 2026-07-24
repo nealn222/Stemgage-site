@@ -194,16 +194,22 @@ function Hero({ go }) {
                   style={{ background: `linear-gradient(140deg, ${ch.g1}, ${ch.g2})` }}
                   aria-hidden={idx !== i}
                 >
-                  <div className="sg-grid-overlay" aria-hidden="true" />
+                  <div
+  className="sg-grid-overlay"
+  aria-hidden="true"
+  style={{ zIndex: 1 }}
+/>
                   {ch.image ? (
   <img
     src={ch.image}
     alt={ch.name}
     style={{
-      width: "180px",
-      height: "180px",
+      position: "absolute",
+      inset: 0,
+      width: "100%",
+      height: "100%",
       objectFit: "cover",
-      borderRadius: "16px"
+      zIndex: 0
     }}
   />
 ) : (
@@ -212,9 +218,13 @@ function Hero({ go }) {
     color="#ffffff"
     strokeWidth={1.4}
     aria-hidden="true"
+    style={{ zIndex: 2 }}
   />
 )}
-                  <div className="sg-slide-cap">
+                  <div
+  className="sg-slide-cap"
+  style={{ zIndex: 2 }}
+>
                     <span className="sg-mono-label" style={{ color: "rgba(255,255,255,.85)" }}>CHALLENGE</span>
                     <strong>{ch.name}</strong>
                   </div>
@@ -875,7 +885,7 @@ h1,h2,h3,h4{ font-family:'Fredoka',sans-serif; color:var(--ink); line-height:1.1
 /* carousel */
 .sg-carousel{ position:relative; z-index:2; }
 .sg-carousel-frame{ position:relative; border-radius:24px; overflow:hidden; aspect-ratio:4/3.4; box-shadow:0 24px 50px rgba(17,34,80,.18); border:6px solid #fff; }
-.sg-slide{ position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; opacity:0; transform:scale(1.04); transition:opacity .7s ease, transform .7s ease; }
+.sg-slide{ position:absolute; inset:0; overflow:hidden; display:flex; flex-direction:column; align-items:center; justify-content:center; opacity:0; transform:scale(1.04); transition:opacity .7s ease, transform .7s ease; }
 .sg-slide.is-active{ opacity:1; transform:scale(1); }
 .sg-slide-cap{ position:absolute; left:20px; bottom:20px; display:flex; flex-direction:column; color:#fff; text-shadow:0 2px 8px rgba(0,0,0,.25); }
 .sg-slide-cap strong{ font-family:'Fredoka',sans-serif; font-size:26px; }
