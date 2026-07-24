@@ -155,7 +155,8 @@ function Hero({ go }) {
             No registration. Just show up.
           </div>
           <h1 className="sg-h1">
-            Building tomorrow's problem solvers <br />one step <span className="sg-underline">at a time.</span>
+            Building tomorrow's problem solvers{" "}
+            <span className="text-4xl text-blue-500 font-bold sg-underline">one step at a time.</span>
           </h1>
           <p className="sg-lead">
             Free engineering challenges at your local library where elementary students build, test, and create through exciting hands-on STEM experiences. Every event starts with a short lesson followed by a fun engineering challenge that brings science and math to life.
