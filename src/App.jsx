@@ -158,9 +158,7 @@ function Hero({ go }) {
             Where kids learn STEM<br />by <span className="sg-underline">building it.</span>
           </h1>
           <p className="sg-lead">
-            STEMgage runs free, hands-on engineering challenges for elementary students at your
-            local library. A short lesson, then a timed build. No worksheets, no pressure, just kids
-            making things that work.
+            Free engineering challenges at your local library where elementary students build, test, and create through exciting hands-on STEM experiences. Every event starts with a short lesson followed by a fun engineering challenge that brings science and math to life.
           </p>
           <div className="sg-hero-ctas">
             <Button onClick={() => go("events")}>Find an event near you <ArrowRight size={18} /></Button>
@@ -269,9 +267,9 @@ function Home({ go }) {
       {/* stats */}
       <section className="sg-section sg-stats-band">
         <div className="sg-container sg-stats">
-          <StatBadge value="70+" label="kids served so far" color={C.cobalt} />
+          <StatBadge value="100+" label="kids served so far" color={C.cobalt} />
           <StatBadge value="$0" label="cost to every family" color={C.sprout} />
-          <StatBadge value="5" label="signature build challenges" color={C.sunnyDeep} />
+          <StatBadge value="7" label="signature build challenges" color={C.sunnyDeep} />
           <StatBadge value="2025" label="founded, and just getting started" color={C.coral} />
         </div>
       </section>
