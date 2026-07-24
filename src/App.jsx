@@ -20,7 +20,7 @@ const C = {
 };
 
 const challenges = [
-  { key: "tower",  name: "Spaghetti Tower", icon: Building2, image: "/images/IMG_2656.jpeg", g1: C.cobalt, g2: C.sprout,
+  { key: "tower",  name: "Spaghetti Tower", icon: Building2, g1: C.cobalt, g2: C.sprout,
     tagline: "Build a tower out of spaghetti. Yes, really.",
     blurb: "Tallest free-standing tower from dry pasta and a little tape wins. Easy to start, surprisingly hard to top."
   { key: "egg",    name: "Egg Drop", icon: Egg, g1: C.sunny, g2: C.coral,
