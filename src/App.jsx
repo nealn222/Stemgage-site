@@ -5,6 +5,7 @@ import {
   Heart, Users, GraduationCap, Lightbulb, Hammer, Rocket, Quote, Star,
   CheckCircle2, ChevronLeft, ChevronRight, BookOpen, HandHeart
 } from "lucide-react";
+import spaghettiTowerImg from "./images/IMG_2656.jpeg";
 
 /* ----------------------------------------------------------------------------
    STEMgage — hands-on STEM for elementary kids, at the library, free.
@@ -20,7 +21,7 @@ const C = {
 };
 
 const challenges = [
-  { key: "tower",  name: "Spaghetti Tower", icon: Building2, g1: C.cobalt, g2: C.sprout,
+  { key: "tower",  name: "Spaghetti Tower", image: spaghettiTowerImg, g1: C.cobalt, g2: C.sprout,
     tagline: "Build a tower out of spaghetti. Yes, really.",
     blurb: "Tallest free-standing tower from dry pasta and a little tape wins. Easy to start, surprisingly hard to top."
   { key: "egg",    name: "Egg Drop", icon: Egg, g1: C.sunny, g2: C.coral,
