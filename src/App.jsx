@@ -195,7 +195,25 @@ function Hero({ go }) {
                   aria-hidden={idx !== i}
                 >
                   <div className="sg-grid-overlay" aria-hidden="true" />
-                  <Icon size={120} color="#ffffff" strokeWidth={1.4} aria-hidden="true" />
+                  {ch.image ? (
+  <img
+    src={ch.image}
+    alt={ch.name}
+    style={{
+      width: "180px",
+      height: "180px",
+      objectFit: "cover",
+      borderRadius: "16px"
+    }}
+  />
+) : (
+  <Icon
+    size={120}
+    color="#ffffff"
+    strokeWidth={1.4}
+    aria-hidden="true"
+  />
+)}
                   <div className="sg-slide-cap">
                     <span className="sg-mono-label" style={{ color: "rgba(255,255,255,.85)" }}>CHALLENGE</span>
                     <strong>{ch.name}</strong>
